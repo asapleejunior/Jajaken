@@ -1,6 +1,9 @@
 ✋✂️ Rock Paper Scissors Game
 A simple and interactive Rock, Paper, Scissors game built using vanilla JavaScript, HTML, CSS, and Bootstrap 5. The game allows a player to compete against the computer in a clean, responsive interface.
- test here : 
+ 
+ 
+ test here : https://asapleejunior.github.io/Jajaken/
+
 🎮 Features
 Player vs Computer gameplay Choose between Rock, Paper, or Scissors and see the computer's random choice.
 
