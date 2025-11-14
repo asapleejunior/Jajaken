@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFC Valencio</title>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <div class="score mt-4 mb-4 text-center">
+            <p class="pt-3">Vous</p>
+            <p class="pt-3">Ordinateur</p>
+            <p id="score-joueur">0</p>
+            <p id="score-ordinateur">0</p>
+            <div id="reset">Recommencer</div>
+        </div>
+        <div id="action">
+            <p id="message">A vous de jouer!</p>
+            <div id="next">Tour suivant</div>
+        </div>
+        <div class="jeu d-flex flex-row justify-content-evenly align-items-center">
+            <div class="choix">
+                <div class="button btn-joueur" id="pierre">
+                    <img src="assets/img/pierre.png" alt="pierre">
+                    <p>Pierre</p>
+    
+                </div>
+                <div class="button btn-joueur" id="feuille">
+                    <img src="assets/img/papier.png" alt="feuille">
+                    <p>Feuille</p>
+    
+                </div>
+                <div class="button btn-joueur" id="ciseaux">
+                    <img src="assets/img/ciseaux.png" alt="ciseaux">
+                    <p>Ciseaux</p>
+    
+                </div>
+                
+            </div>
+    
+            <div class="choix">
+                <div class="button btn-ordi" id="opierre">
+                    <img src="assets/img/pierre.png" alt="pierre">
+                    <p>Pierre</p>
+    
+                </div>
+                <div class="button btn-ordi" id="ofeuille">
+                    <img src="assets/img/papier.png" alt="feuille">
+                    <p>Feuille</p>
+    
+                </div>
+                <div class="button btn-ordi" id="ociseaux">
+                    <img src="assets/img/ciseaux.png" alt="ciseaux">
+                    <p>Ciseaux</p>
+    
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
