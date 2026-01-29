@@ -8,11 +8,11 @@ let message = document.getElementById("message")
 let nextBtn = document.getElementById("next")
 let btnJoueur = [...document.getElementsByClassName("btn-joueur")]
 
-// NOUVEAU: Récupération de tous les boutons de l'ordinateur
+
 let btnOrdinateur = [...document.getElementsByClassName("btn-ordi")] 
 
 
-///Fonction de tout le jeu
+
 const jouerManche = (e) =>{
     let choix = e.target.closest(".btn-joueur")
     btnJoueur.forEach(btn =>{
@@ -30,24 +30,23 @@ const jouerManche = (e) =>{
 }
 
 
-///Fonction Ordi choix aléatoire
+
 const PIERRE = "pierre"
 const FEUILLE = "feuille"
 const CISEAUX = "ciseaux"
 
 
 const faireChoixOrdinateur = ( ) =>{
-// CORRECTION: 1. Désactiver tous les choix de l'ordinateur
+
     btnOrdinateur.forEach(btn => {
         btn.classList.add("desactivated")
         btn.classList.remove("active")
     })
 
-  ///1 feuille
-  ///2 ciseaux
+ 
   let nbAleatoire = Math.floor(Math.random() * 3) 
   
-  let choixOrdiElement // Variable pour stocker l'élément choisi
+  let choixOrdiElement 
   let resultatChoix
 
   switch (nbAleatoire){
@@ -65,9 +64,9 @@ const faireChoixOrdinateur = ( ) =>{
       break
   }
 
-  // CORRECTION: 2. Activer uniquement le choix de l'ordinateur
+  
   choixOrdiElement.classList.add("active")
-  choixOrdiElement.classList.remove("desactivated") // Retirer la désactivation
+  choixOrdiElement.classList.remove("desactivated") 
 
   return resultatChoix
 }
@@ -106,7 +105,7 @@ const verifierGagnant = (choixJoueur,choixOrdi) =>{
     
 }
 
-///Fonctions victoires et incrémentation score
+
 const victoireOrdinateur = () =>{
     message.textContent = "L'ordinateur gagne..."
     scoreOrdinateur.textContent++
@@ -125,7 +124,7 @@ const preparerNouvelleManche = () => {
 
     nextBtn.style.visibility = "hidden"
 
-//  Réactiver/nettoyer les boutons de l'ordinateur pour la nouvelle manche
+
     btnOrdinateur.forEach(btn => {
     btn.classList.remove("desactivated")
         btn.classList.remove("active")
